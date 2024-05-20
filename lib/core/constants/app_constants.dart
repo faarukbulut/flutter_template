@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
-const String apiBaseUrl = "https://vibeapi.alesia.net.tr";
+class AppConstants{
+  static String apiBaseUrl = "API_URL";
 
-const String androidVersion = "1.0.0";
-const String iOSVersion = "1.0.0";
+  static String androidVersion = "1.0.0";
+  static String iOSVersion = "1.0.0";
 
-const Color kPrimary = Color.fromARGB(255, 51, 77, 195); // Ana Renk
+  static Color kPrimary = const Color.fromARGB(255, 51, 77, 195); // Ana Renk
+
+}

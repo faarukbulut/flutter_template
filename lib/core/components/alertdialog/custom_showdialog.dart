@@ -15,11 +15,10 @@ Future<dynamic> normalShowDialog(context, String uyariText, Color uyariColor, bu
           const SizedBox(height: 24),
           Text(uyariText, textAlign: TextAlign.center, style: TextStyle(fontSize: 16, color: uyariColor),),
           const SizedBox(height: 24),
-          GestureDetector(
-            onTap:(){
-              Get.back();
-            },
-            child: butonContainer(butonText, kPrimary),
+          customNormalButon(
+            (){ Get.back(); },
+            butonText,
+            AppConstants.kPrimary
           ),
         ],
       ),

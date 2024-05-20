@@ -62,7 +62,7 @@ InputDecoration textFieldSifreDecoration(String hintText, Function sifreDurumDeg
     fillColor: const Color(0xffe5e7f2),
     suffixIcon: IconButton(
       onPressed: (){sifreDurumDegistir();},
-      icon: Icon(sifreDurum.value == true ? Icons.visibility : Icons.visibility_off, color: kPrimary),
+      icon: Icon(sifreDurum.value == true ? Icons.visibility : Icons.visibility_off, color: AppConstants.kPrimary),
     ),
   );
 }

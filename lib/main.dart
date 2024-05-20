@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/view/auth/login/login_view.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
 
       locale: Locale('tr', 'TR'),
 
-      home: Scaffold(), //
+      home: LoginView(), //
     );
   }
 }

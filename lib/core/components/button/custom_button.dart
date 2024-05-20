@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
 
-Container butonContainer(String yazi, Color renk) {
-  return Container(
-    alignment: Alignment.center,
-    padding: const EdgeInsets.all(12),
-    decoration: BoxDecoration(color: renk, borderRadius: BorderRadius.circular(10)),
-    child: Text(yazi, style: const TextStyle(color: Colors.white, fontSize: 14),),
+customNormalButon(Function function, String text, Color color){
+  return ElevatedButton(
+    onPressed: (){ function(); },
+    style: ElevatedButton.styleFrom(
+      backgroundColor: color,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+    ),
+    child: Text(text, style: const TextStyle(color: Colors.white)),
+  );
+}
+
+customWithIconButon(Function function, IconData icon, String text){
+  return ElevatedButton.icon(
+    onPressed: (){ function(); },
+    icon: Icon(icon),
+    label: Text(text),
   );
 }
